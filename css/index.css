@@ -124,6 +124,10 @@ button {
 	width: 100%;
 }
 
+.mid-content-wrapper {
+  display: flex;
+}
+
 .mid-content img {
 	padding: 0 40px;
 }
@@ -214,14 +218,48 @@ address {
     margin: 0 auto;
   }
 
-  .feature {
+  .features {
     padding-left: 0;
+    margin-right: 10px;
     width: 50%;
+  }
+
+  .about {
+    padding-right: 0;
+    margin-left: 10px;
+  }
+
+  .mid-content-wrapper {
+    justify-content: space-around;
   }
 
   .mid-content img {
     width: 100%;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .bottom-content {
+    justify-content: space-around;
+  }
+
+  .services, .product, .vision {
+  	margin: 10px 0;
+  	padding: 15px 5px;
+  	padding-bottom: 25px;
+  	width: 32%;
+  }
+
+  .services {
+    margin-left: 0;
+  }
+
+  .vision {
+    margin-right: 0;
+  }
+
+  address {
+    padding-left: 0;
+    margin: 0 1.5%;
   }
 }
