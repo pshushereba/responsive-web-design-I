@@ -70,7 +70,11 @@ h1, h2, h3, h4, h5 {
 .container {
 	max-width: 1000px;
 	padding: 0 auto;
-	margin: 0 auto;
+	margin: 0 2.5%;
+}
+
+header {
+  display: flex;
 }
 
 .style-nav {
@@ -185,9 +189,20 @@ address {
 
 /* Responsive Web Design Selectors */
 
-@media (max-width: 768px) {
-  .style-nav img {
-    display: block;
+@media (max-width: 800px) {
+  header {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  header img {
+    width: max-content;
+    justify-content: center;
+    margin: 20px auto 0;
+  }
+
+  .style-nav {
+    justify-content: space-between;
   }
 
   .top-content-image {
@@ -197,5 +212,16 @@ address {
   .welcome {
     justify-content: center;
     margin: 0 auto;
+  }
+
+  .feature {
+    padding-left: 0;
+    width: 50%;
+  }
+
+  .mid-content img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 }
